@@ -1,0 +1,91 @@
+<html>
+<head>
+    <title>로그인</title>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: grey;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .login{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 6px solid black;
+            border-radius: 30px;
+            background-color: white;
+            width: 400px;
+            height: 500px;
+        }
+        .login_img{
+            padding-top: 30px;
+            height: 100px;
+        }
+        .id{
+            display: flex;
+            align-items: center;
+            width: 90%;
+            padding-top: 50px;
+        }
+        .idin{
+            width: 100%;
+            border: 1px solid #bbb;
+            border-radius: 8px;
+            padding: 10px 12px;
+            font-size: 28px;
+            font-family: 'Bagel Fat One', cursive;
+        }
+        .pw{
+            display: flex;
+            align-items: center;
+            width: 90%;
+            padding-top: 50px;
+        }
+        .pwin{
+            width: 100%;
+            border: 1px solid #bbb;
+            border-radius: 8px;
+            padding: 10px 12px;
+            font-size: 28px;
+            font-family: 'Bagel Fat One', cursive;
+        }
+        .button{
+            padding-top: 50px;
+            height: 70px;
+            width: 90%;
+        }
+        .login_btn{
+            border: 0;
+            border-radius: 15px;
+            height: 100%;
+            width: 100%;
+            font-family: 'Bagel Fat One', cursive;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="login">
+        <div>
+            <img class="login_img" src="imgs/login.png">
+        </div>
+        <div class="id">
+            <input class="idin" type="text" placeholder="ID">
+        </div>
+        <div class="pw">
+            <input class="pwin" type="text" placeholder="PW">
+        </div>
+        <div class="button">
+            <a href="mypage.html">
+                <button class="login_btn">로그인</button>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

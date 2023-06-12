@@ -1,0 +1,53 @@
+<html>
+<head>
+    <title>장바구니</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap');
+        @keyframes burning1 {
+            0% {
+                color: #ff0000;
+                box-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 40px #ff0000, 0 0 80px #ff0000, 0 0 120px #ff0000;
+            }
+            25% {
+                color: #fff200;
+                box-shadow: 0 0 5px #fff200, 0 0 10px #fff200, 0 0 20px #fff200, 0 0 40px #fff200, 0 0 80px #fff200, 0 0 120px #fff200;
+            }
+            50% {
+                color: #00ff00;
+                box-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 40px #00ff00, 0 0 80px #00ff00, 0 0 120px #00ff00;
+            }
+            75% {
+                color: #0000ff;
+                box-shadow: 0 0 5px #0000ff, 0 0 10px #0000ff, 0 0 20px #0000ff, 0 0 40px #0000ff, 0 0 80px #0000ff, 0 0 120px #0000ff;
+            }
+            100% {
+                color: #d400ff;
+                box-shadow: 0 0 5px #d400ff, 0 0 10px #d400ff, 0 0 20px #d400ff, 0 0 40px #d400ff, 0 0 80px #d400ff, 0 0 120px #d400ff;
+            }
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: grey;
+        }
+        .logo {
+            padding-top: 3vh;
+            height: 23vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+        }
+        .logo_img {
+            height: 20vh;
+            animation: burning1 3s infinite;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo">
+        <a href="index.html" ><img class="logo_img" src="imgs/cubedotcom.png" ></a>
+    </div>
+</body>
+</html>
