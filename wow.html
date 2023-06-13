@@ -1,0 +1,41 @@
+<html>
+<head>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            background-image: url(imgs/strange.png);
+            background-size: 5%;
+            background-repeat: 20;
+            z-index: 1;
+        }
+        #text{
+            font-size: 20pxpx;
+            color: white;
+            text-align: center;
+            z-index: 2;
+            opacity: 0;;
+        }
+        button{
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+        }
+    </style>
+</head>
+    <body onclick="
+        document.documentElement.requestFullscreen();
+        document.body.style.backgroundImage='url(\'imgs/background.png\')';
+        document.getElementById('text').style.opacity='1';
+        ">
+        <div id="text">
+            <br><br>
+            <p>Hello dear friend!</p>
+            <br>
+            <p>Your files are encrypted. and, as result you can't use it. You must visit our page to get instructions about decryption process.</p>
+            <p>For futher steps 0Bqif3a28-readme.txt that is located in every encrypted folder</p>
+        </div>
+    </body>
+</html>

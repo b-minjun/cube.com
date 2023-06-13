@@ -1,0 +1,89 @@
+<html>
+<head>
+    <title>성인인증</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: grey;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .seongin{
+            border: 6px solid black;
+            border-radius: 30px;
+            background-color: white;
+            width: 400px;
+            height: 300px;
+        }
+        h1{
+            font-family: 'Bagel Fat One', cursive;
+            font-size: 40px;
+            text-align: center;
+        }
+        label{
+            font-family: 'Bagel Fat One', cursive;
+            font-size: 30px;
+            padding-left: 30px;
+        }
+        .y{
+            padding-top: 20px;
+            height: 50px;
+        }
+        .n{
+            padding-top: 20px;
+            height: 50px;
+        }
+        input{
+            margin-right: 30px;
+        }
+        input[type="radio"]{
+            width: 20px;
+            height: 20px;
+        }
+        .btnfa{
+            padding-top: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .btn{
+            border: 0;
+            border-radius: 15px;
+            height: 60px;
+            width: 120px;
+            font-family: 'Bagel Fat One', cursive;
+            font-size: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="seongin">
+        <h1>만19세 이상입니까?</h1>
+        <form>
+            <div class="y">
+                <label><input type="radio" name="?" id="y" value="y">예</label>
+            </div>
+            <div class="n">
+                <label><input type="radio" name="?" id="n" value="y">아니요</label>
+            </div>
+        </form>
+        <div class="btnfa">
+            <button class="btn" onclick="
+                if(document.getElementById('y').checked) {
+                    window.location.href='wow.html';
+                } else {
+                    window.location.href='index.html'
+                }
+                ">
+                확인
+            </button>
+        </div>
+        
+    </div>
+</body>
+</html>
